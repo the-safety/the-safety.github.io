@@ -1,0 +1,66 @@
+{% if page.lang == "en" %}
+{% capture i18n_link_part %}{% endcapture %}
+{% else %}
+{% capture i18n_link_part %}{{ page.lang }}{% endcapture %}
+{% endif %}
+
+<section class="section" id="bodies">
+    <div class="container">
+        <div class="content has-text-centered">
+            <h2>{{ site.data.i18n[page.lang].global.training_bodies }}</h2>
+        </div>
+        <div class="columns has-text-centered">
+            <div class="column is-one-third">
+                <div class="card">
+                    <div class="card-image">
+                        <figure class="image px-2 py-2">
+                            <img src="{{ '/assets/img/gwo-logo-256x160.svg' | relative_url }}" alt="GWO Logo">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-2">{{ site.data.i18n[page.lang].pages.gwo.title }}</p>
+                        <p class="subtitle is-6">{{ site.data.i18n[page.lang].pages.gwo.subtitle }}</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="{{ '/courses/gwo' | prepend: i18n_link_part | relative_url }}" class="card-footer-item">{{ site.data.i18n[page.lang].global.browse_courses }}</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card is-fullheight">
+                    <div class="card-image">
+                        <figure class="image px-2 py-2">
+                            <img src="{{ '/assets/img/the-ra-training-256x160.svg' | relative_url }}" alt="IRATA Logo">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-2">{{ site.data.i18n[page.lang].pages.irata.title }}</p>
+                        <p class="subtitle is-6">{{ site.data.i18n[page.lang].pages.irata.subtitle }}</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="{{ '/courses/irata' | prepend: i18n_link_part | relative_url }}" class="card-footer-item">{{ site.data.i18n[page.lang].global.browse_courses }}</a>
+                    </footer>
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="card is-fullheight">
+                    <div class="card-image">
+                        <figure class="image px-2 py-2">
+                            <img src="{{ '/assets/img/dguv-logo-256x160.svg' | relative_url }}" alt="IRATA Logo">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-2">{{ site.data.i18n[page.lang].pages.dguv.title }}</p>
+                        <p class="subtitle is-6">{{ site.data.i18n[page.lang].pages.dguv.subtitle }}</p>
+                    </div>
+                    <footer class="card-footer">
+                        <a href="{{ '/courses/dguv' | prepend: i18n_link_part | relative_url }}" class="card-footer-item">{{ site.data.i18n[page.lang].global.browse_courses }}</a>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

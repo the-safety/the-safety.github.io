@@ -1,0 +1,21 @@
+
+<div class="card is-fullheight">
+    <div class="card-content">
+        <div class="media">
+            <div class="media-left is-narrow">
+                <figure class="image">
+                    <img style="height:auto; width:3.5cm;" src="{{ include.icon_url | relative_url }}">
+                </figure>
+            </div>
+            <div class="media-content">
+                <p class="title is-4">{{include.name}}</p>
+                <p class="subtitle is-6">{{include.code}}</p>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer">
+        <span class="card-footer-item">{{ course.price }} €</span>
+        <a class="card-footer-item" href="{{ include.url | relative_url }}">{{ site.data.i18n[page.lang].global.details }}</a>
+    </footer>
+</div>
+

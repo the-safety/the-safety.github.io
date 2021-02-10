@@ -1,0 +1,87 @@
+global:
+  navigation: Navigation
+  office: Office
+  training_center: Training Center
+  details: Details
+  course: Course
+  duration: Duration
+  price: Price
+  training_bodies: Training Bodies
+  browse_courses: Browse Courses
+  day: day
+  days: days
+  excl_vat: Excl. VAT
+  location: Location
+  code: Code
+  public_keys: Dost Public Keys
+  key: Key
+  start_date: Start Date
+  end_date: End Date
+
+pages:
+  home:
+    url:
+    link: Home
+    title: Welcome to our training center
+    subtitle: We offer a selection of GWO and DGUV training at our training center in Dortmund, Germany
+  courses:
+    url: courses
+    link: Courses
+    title: Training Courses
+    subtitle: Wind Energy & Industrial Rope Access
+  prices:
+    url: prices
+    link: Prices
+    title: Price List
+    subtitle: Excl. VAT
+  booking:
+    url: booking
+    link: Booking
+    link_alt: Training Calendar & Book Online
+    title: Online Booking Portal
+    subtitle: Browse and book our upcoming training courses
+  verification:
+    url: verification
+    link: Verification
+    title: Verification
+    subtitle: How our verification works
+  about:
+    url: about
+    link: About
+    title: About us
+    subtitle: Learn about the training center
+  terms:
+    url: termsandconditions
+    link: Terms & Conditions
+    title: Terms & Conditions
+    subtitle: Read our terms
+  privacy:
+    url: privacypolicy
+    link: Privacy Policy
+    title: Privacy Policy
+    subtitle: How we handle your privacy and data
+  impressum:
+    url: impressum
+    link: Impressum
+    title: Impressum
+    subtitle: Coorporate Details
+  verify:
+    url: verify
+    link: Verify
+    title: Certificate Verification
+    subtitle: Check the validity of your certificate
+  dguv:
+    url: courses/dguv
+    link: DGUV Courses
+    title: DGUV Courses
+    subtitle: Deutsche Gesetzliche Unfallversicherung
+  irata:
+    url: courses/irata
+    link: IRATA Courses
+    title: IRATA Courses
+    subtitle: International Rope Access Trade Association
+  gwo:
+    url: courses/gwo
+    link: GWO Courses
+    title: GWO Courses
+    subtitle: Global Wind Organisation

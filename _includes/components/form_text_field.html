@@ -1,0 +1,7 @@
+<div class="field">
+    <label class="label" for="{{ include.field_id }}">{{ include.field_label }}</label>
+    <div class="control">
+        <input class="input {{ include.field_class }}" type="{{ include.field_type }}" id="{{ include.field_id }}" name="{{ include.field_id }}" {{ include.modifier }}>
+    </div>
+    <p id="{{ include.field_id }}_help" class="help {{ include.field_class }}">{{ include.help }}</p>
+</div>

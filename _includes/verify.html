@@ -1,0 +1,65 @@
+{% include hero.html %}
+<div class="container is-half">
+    <section class="section" id="verify">
+        <div class="content">
+            <h1>Verify</h1>
+            <p>This page should be reached by scanning the URL in the QR code printed on your certificate</p>
+            <p>Modifying the URL will cause the signature check to fail</p>
+            <p>Please compare the extracted details with those written on the certificate</p>
+            <h2>QR Code / URL Parameters</h2>
+            <form>
+                {% include components/form_text_field.html field_id="todays_date" field_label="Todays date" field_type="date" modifier="readonly" %}
+                {% include components/form_text_area.html field_id="certificate_data" field_label="Certificate data" field_class="is-warning" help="CHECKING ..." modifier="readonly" %}
+                {% include components/form_text_area.html field_id="certificate_data_signature" field_label="Certificate data signature" field_class="is-warning" help="CHECKING ..." modifier="readonly" %}
+            </form>
+            <h2>Our Public Verifying Key</h2>
+            <form>
+                {% include components/form_text_area.html field_id="public_verifying_key" field_label="Public verifying key" modifier="readonly" %}
+                {% include components/form_text_field.html field_id="public_verifying_key_ts" field_label="Public verifying key signing window" modifier="readonly" %}
+            </form>
+            <h2>Details</h2>
+            <form>
+                <div class="columns">
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="ex_course_code" field_label="Course Code" modifier="readonly" %}
+                    </div>
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="com_course_name" field_label="Course Name" modifier="readonly" %}
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="ex_issue_date" field_label="Issue Date" field_type="date" modifier="readonly" %}
+                    </div>
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="com_months_valid" field_label="Months Valid" field_type="text" modifier="readonly" %}
+                    </div>
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="com_expiry_date" field_label="Expiry Date" field_type="date" modifier="readonly" %}
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="ex_first_name" field_label="First Name" modifier="readonly" %}
+                    </div>
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="ex_last_name" field_label="Last Name" modifier="readonly" %}
+                    </div>
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="ex_birth_date" field_label="Birth Date" field_type="date" modifier="readonly" %}
+                    </div>
+                    <div class="column">
+                        {% include components/form_text_field.html field_id="ex_id" field_label="ID" modifier="readonly" %}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" charset="utf-8" src="{{ '/assets/js/libs/jsrsasign-all-min.js' | baseurl_root }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ '/assets/js/libs/date.js' | baseurl_root }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ '/assets/js/course_data.js' | baseurl_root }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ '/assets/js/public_key_data.js' | baseurl_root }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ '/assets/js/verify.js' | baseurl_root }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ '/assets/js/verify.js' | baseurl_root }}"></script>

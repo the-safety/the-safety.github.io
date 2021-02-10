@@ -1,0 +1,61 @@
+{% if page.lang == "en" %}
+{% capture i18n_link_part %}{% endcapture %}
+{% else %}
+{% capture i18n_link_part %}{{ page.lang }}{% endcapture %}
+{% endif %}
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="{{ '/' | prepend: i18n_link_part | relative_url }}">
+                <img src="{{ '/assets/img/the-turb-logo.png' | relative_url }}" alt="Logo">
+                <span id="the-navbar-logo-text">
+                    <span>T</span>
+                    <span class="has-text-primary">.</span>
+                    <span>H</span>
+                    <span class="has-text-primary">.</span>
+                    <span>E</span>
+                    <span class="has-text-primary">-</span>
+                    <span>Safety</span>
+                </span>
+            </a>
+
+            <a role="button" class="navbar-burger">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+
+            </div>
+            <div class="navbar-end">
+                <a class="navbar-item" href="{{ '/' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.home.link }}</a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="{{ '/courses' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.courses.link }}</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="{{ '/courses/gwo' | prepend: i18n_link_part | relative_url }}">GWO</a>
+                        <a class="navbar-item" href="{{ '/courses/irata' | prepend: i18n_link_part | relative_url }}">IRATA</a>
+                        <a class="navbar-item" href="{{ '/courses/dguv' | prepend: i18n_link_part | relative_url }}">DGUV</a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="{{ '/prices' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.prices.link }}</a>
+                <div class="navbar-item">
+                    <a class="button is-primary" href="{{ '/booking' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.booking.link_alt }}</a>
+                </div>
+                <a class="navbar-item" href="{{ '/verification' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.verification.link }}</a>
+                <a class="navbar-item" href="{{ '/about' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.about.link }}</a>
+
+                {% if page.lang == "en" %}
+                <a  class="navbar-item" href="{{ page.url | prepend: 'de' | relative_url }}"><img style="width: 22px;" src="{{ '/assets/img/flags/de.svg' | relative_url }}" alt="DE Flag"></a>
+                <!--                <a  class="navbar-item" href="{{ site.data.i18n[page.lang].pages[page.i18n_id].url | prepend: 'de/' | relative_url }}"><img style="width: 22px;" src="{{ '/assets/img/flags/de.svg' | relative_url }}" alt="DE Flag"></a>-->
+                {% elsif page.lang == "de" %}
+                <a  class="navbar-item" href="{{ page.url | replace_first: 'de/', '' | relative_url }}"><img style="width: 22px;" src="{{ '/assets/img/flags/gb.svg' | relative_url }}" alt="GB Flag"></a>
+                <!--                <a  class="navbar-item" href="{{ site.data.i18n[page.lang].pages[page.i18n_id].url | prepend: '/' | relative_url }}"><img style="width: 22px;" src="{{ '/assets/img/flags/gb.svg' | relative_url }}" alt="GB Flag"></a>-->
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</nav>

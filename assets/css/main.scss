@@ -1,0 +1,55 @@
+---
+---
+
+$fa-font-path: '/assets/fonts';
+@import "fontawesome/fontawesome";
+@import "fontawesome/brands";
+@import "fontawesome/solid";
+
+@font-face {
+  font-family: 'paralucent';
+  src: url('/assets/fonts/Paralucent W00 Medium.ttf');
+  //font-display: swap;
+}
+
+@import "bulma/sass/utilities/initial-variables.sass";
+$navbar-breakpoint: $widescreen;
+$family-primary: 'paralucent';
+$fluorescent-yellow: #ccff00;
+$primary: darken($fluorescent-yellow, 5%);
+$primary-dark: darken($fluorescent-yellow, 15%);
+$link: $primary-dark;
+@import "bulma/bulma";
+
+.title {
+  letter-spacing: 0.15rem;
+}
+
+.subtitle {
+  letter-spacing: 0rem;
+}
+
+#the-navbar-logo-text {
+  //color: #ccff00;
+  font-size: 20px;
+  margin-left: 0.5em;
+}
+
+#the-hero {
+  background: linear-gradient(-120deg, rgba($primary-dark, 0.6) 0%,  rgba($primary-dark, 0.7) 70%,  rgba($primary-dark, 0.8) 100%), url('/assets/img/photos/tc1.jpg') no-repeat center center scroll;
+  background-size: cover;
+  color: $white;
+}
+
+.map-frame {
+  border: 1px solid black;
+}
+
+.card.is-fullheight {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .card-footer {
+    margin-top: auto;
+  }
+}

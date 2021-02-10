@@ -1,0 +1,89 @@
+global:
+  navigation: Navigation
+  office: Büro
+  training_center: Trainingszentrum
+  details: Einzelheiten
+  course: Kurs
+  duration: Dauer
+  price: Preis
+  courses: Kurse
+  training_bodies: Ausbildungseinrichtungen
+  browse_courses: Kurse durchsuchen
+  day: Tag
+  days: Tage
+  excl_vat: Excl. MwSt
+  location: Ort
+  code: Code
+  public_keys: T.H.E-Safety Öffentliche Schlüssel
+  key: Schlüssel
+  start_date: Startdatum
+  end_date: Enddatum
+
+
+pages:
+  home:
+    url:
+    link: Startseite
+    title: Willkommen in unserem Schulungszentrum
+    subtitle: In unserem Schulungszentrum in Dortmund bieten wir eine Auswahl an GWO- und DGUV-Schulungen an
+  courses:
+    url: courses
+    link: Kurse
+    title: Trainingskurse
+    subtitle: Zugang zu Windenergie und Industrieseilen
+  prices:
+    url: prices
+    link: Preise
+    title: Preisliste
+    subtitle: Exkl. MwSt
+  booking:
+    url: booking
+    link: Buchung
+    link_alt: Schulungskalender & Online buchen
+    title: Online-Buchungsportal
+    subtitle: Stöbern und buchen Sie unsere bevorstehenden Schulungen
+  verification:
+    url: verification
+    link: Überprüfung
+    title: Überprüfung
+    subtitle: Wie unsere Überprüfung funktioniert
+  about:
+    url: about
+    link: Über uns
+    title: Über uns
+    subtitle: Erfahren Sie mehr über das Schulungszentrum
+  terms:
+    url: termsandconditions
+    link: Geschäftsbedingungen
+    title: Geschäftsbedingungen
+    subtitle: Lesen Sie unsere Bedingungen
+  privacy:
+    url: privacypolicy
+    link: Datenschutz
+    title: Datenschutz
+    subtitle: Wie wir mit Ihrer Privatsphäre und Ihren Daten umgehen
+  impressum:
+    url: impressum
+    link: Impressum
+    title: Impressum
+    subtitle: Unternehmensdetails
+  verify:
+    url: verify
+    link: Überprüfen
+    title: Zertifikatsüberprüfung
+    subtitle: Überprüfen Sie die Gültigkeit Ihres Zertifikats
+  dguv:
+    url: courses/dguv
+    link: DGUV Kurse
+    title: DGUV Kurse
+    subtitle: Deutsche Gesetzliche Unfallversicherung
+  irata:
+    url: courses/irata
+    link: IRATA Kurse
+    title: IRATA Kurse
+    subtitle: International Rope Access Trade Association
+  gwo:
+    url: courses/gwo
+    link: GWO Kurse
+    title: GWO Kurse
+    subtitle: Global Wind Organisation

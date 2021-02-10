@@ -1,0 +1,27 @@
+<section class="section" id="location">
+    <div class="container">
+        <div class="content has-text-centered">
+            <h2>{{ site.data.i18n[page.lang].global.location }}</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>{{ site.data.i18n[page.lang].global.office }}</h3>
+                    <p><i class="fas fa-map-marked-alt"></i> <a href="{{ site.maps_link_office }}">{{
+                        site.organisation_address_office }}</a> </p>
+                    <div class="image is-4by3">
+                        <iframe class="has-ratio map-frame" src="{{ site.maps_embed_office}}" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="column ">
+                    <h3>{{ site.data.i18n[page.lang].global.training_center }}</h3>
+                    <p><i class="fas fa-map-marked-alt"></i> <a href="{{ site.maps_link_facility }}">{{
+                        site.organisation_address_facility }}</a> </p>
+                    <div class="image is-4by3">
+                        <iframe class="has-ratio map-frame" src="{{ site.maps_embed_facility }}" allowfullscreen=""
+                                aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

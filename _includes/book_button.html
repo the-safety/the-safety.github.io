@@ -1,0 +1,11 @@
+{% if page.lang == "en" %}
+{% capture i18n_link_part %}{% endcapture %}
+{% elsif page.lang == "de" %}
+{% capture i18n_link_part %}de{% endcapture %}
+{% endif %}
+
+<section class="section" id="booking">
+    <div class="container has-text-centered">
+        <a class="button is-primary" href="{{ '/booking' | prepend: i18n_link_part | relative_url }}">{{ site.data.i18n[page.lang].pages.booking.link_alt }}</a>
+    </div>
+</section>

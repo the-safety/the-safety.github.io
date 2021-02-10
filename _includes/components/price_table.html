@@ -1,0 +1,26 @@
+{% if page.lang == "de" %}
+{% assign courses_collection = site.courses_de %}
+{% else %}
+{% assign courses_collection = site.courses%}
+{% endif %}
+<h3>{{ site.data.i18n[page.lang].pages[include.body].title }}</h3>
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">{{ site.data.i18n[page.lang].global.course }}</th>
+        <th scope="col">{{ site.data.i18n[page.lang].global.duration }}</th>
+        <th scope="col">{{ site.data.i18n[page.lang].global.price }} ({{ site.data.i18n[page.lang].global.excl_vat }})</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for course in courses_collection %}
+    {% if course.body == include.body %}
+    <tr>
+        <td scope="row"><a href="{{course.url}}">{{ course.name }}</a></td>
+        <td>{% if course.duration == 0.5 %}½{% else %}{{ course.duration }}{% endif %} {% if course.duration <= 1 %}{{ site.data.i18n[page.lang].global.day }}{% else %}{{ site.data.i18n[page.lang].global.days }}{% endif %}</td>
+        <td>{{ course.price }} €</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+</table>

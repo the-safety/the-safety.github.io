@@ -1,0 +1,7 @@
+<div class="field">
+    <label class="label" for="{{ include.field_id }}">{{ include.field_label }}</label>
+    <div class="control">
+        <textarea class="textarea {{ include.field_class }}" id="{{ include.field_id }}" name="{{ include.field_id }}" rows="3" {{ include.modifier }}></textarea>
+    </div>
+    <p id="{{ include.field_id }}_help" class="help {{ include.field_class }}">{{ include.help }}</p>
+</div>

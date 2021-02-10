@@ -1,0 +1,51 @@
+# Site settings
+url: "www.the-safety.de"
+baseurl: ""
+title: "T . H . E - Safety"
+description: "Wind Energy Training and Certification"
+keywords: "Training, GWO, IRATA, Wind"
+
+organisation: "T . H . E - Safety"
+organisation_address_office: "Wullener Feld 61, 58454 Witten, Germany"
+organisation_address_facility: "Westerweide 27, 58456 Witten, Germany"
+organisation_email: "training@the-safety.de"
+organisation_phone: "+49 2302 282361 - 0"
+
+maps_link_office: "https://goo.gl/maps/g1NmMiSCfFRtmr538"
+maps_embed_office: "https://maps.google.com/maps?&hl=en&q=Wullener%20Feld%2061,%2058454%20Witten,%20Germany+(THE%20Safety%20Offices)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+
+maps_link_facility: "https://goo.gl/maps/ZB33eSXNRrRtHdZx6"
+maps_embed_facility: "https://maps.google.com/maps?hl=en&q=Westerweide%2027,%2058456%20Witten,%20Germany+(THE%20Safety%20Training%20Facility)&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+
+google_analytics: "UA-180935645-1"
+
+collections:
+  courses:
+    output: true
+  courses_de:
+    output: true
+    permalink: /de/courses/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "courses"
+    values:
+      layout: "course"
+  - scope:
+      path: ""
+      type: "courses_de"
+    values:
+      layout: "course"
+
+exclude:
+  - README.md
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+sass:
+  style: compressed
+
+#host: localhost

@@ -1,0 +1,21 @@
+<h2>{{ site.data.i18n[page.lang].global.public_keys }}</h2>
+<table class="table">
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">{{ site.data.i18n[page.lang].global.key }}</th>
+            <th scope="col">{{ site.data.i18n[page.lang].global.start_date }}</th>
+            <th scope="col">{{ site.data.i18n[page.lang].global.end_date }}</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for key in site.data.public_keys %}
+        <tr>
+            <td scope="row">{{ key.hex_string }}</td>
+            <td>{{ key.issue_timestamp }}</td>
+            <td>{{ key.expiry_timestamp }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</table>

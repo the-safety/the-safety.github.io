@@ -1,0 +1,22 @@
+{% if page.lang == "de" %}
+{% assign courses_collection = site.courses_de %}
+{% else %}
+{% assign courses_collection = site.courses %}
+{% endif %}
+<section class="section" id="{{ include.body }}_courses">
+    <div class="container">
+        <div class="content">
+            <h2>{{ site.data.i18n[page.lang].pages[include.body].title }}</h2>
+            <div class="columns is-multiline">
+                {% for course in courses_collection %}
+                {% if course.body == include.body %}
+                <div class="column is-full is-half-desktop">
+                    {% include components/course_card.html name=course.name code=course.code url=course.url
+                    icon_url=include.logo %}
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

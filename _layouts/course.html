@@ -1,0 +1,46 @@
+---
+layout: base
+---
+<section class="hero is-primary is-bold">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">
+                {{ page.name }}
+            </h1>
+            <h2 class="subtitle">
+                {{ page.code }}
+            </h2>
+        </div>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="content">
+            {% if page.body == "gwo" %}
+            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/gwo-logo-256x160.svg' | relative_url }}" alt="GWO Logo">
+            {% elsif page.body == "irata" %}
+            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/dost-ropeaccess-logo-256x160.svg' | relative_url }}" alt="IRATA Logo">
+            {% elsif page.body == "dguv" %}
+            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/dguv-logo-256x160.svg' | relative_url }}" alt="DGUV Logo">
+            {% endif %}
+            <h2>{{ page.name }}</h2>
+            <div class="columns">
+                <div class="column">
+                    <h3>{{ site.data.i18n[page.lang].global.code }}</h3>
+                    <p>{{ page.code }}</p>
+                </div>
+                <div class="column">
+                    <h3>{{ site.data.i18n[page.lang].global.price }}</h3>
+                    <p>{{ page.price }} €</p>
+                </div>
+                <div class="column">
+                    <h3>{{ site.data.i18n[page.lang].global.duration }}</h3>
+                    <p>{% if page.duration == 0.5 %}½{% else %}{{ page.duration }}{% endif %} {% if page.duration <= 1 %}{{ site.data.i18n[page.lang].global.day }}{% else %}{{ site.data.i18n[page.lang].global.days }}{% endif %}</p>
+                </div>
+            </div>
+            <h3>{{ site.data.i18n[page.lang].global.details }}</h3>
+            {{ content }}
+        </div>
+    </div>
+</section>
+{% include book_button.html %}
