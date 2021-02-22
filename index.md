@@ -4,10 +4,6 @@ lang: en
 i18n_id: home
 ---
 
-## Opening Soon
-
-We are currently working hard to refit our equipment and facilities. We will open in Winter 2020.
-
 ## Welcome
 
 We offer a selection of GWO, DGUV, and Rope Access training courses

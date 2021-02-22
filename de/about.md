@@ -6,8 +6,9 @@ i18n_id: about
 
 ## Geschichte
 
-Dost verfügt über langjährige Erfahrung in der Windenergie- und Offshore-Industrie
+Das T.H.E.-Schulungszentrum verfügt über langjährige Erfahrung in der Windenergie- und Offshore-Industrie
 
-## Anlagen
+## Einrichtungen
 
-Unser Klassenzimmer und unsere Einrichtung erfüllen alle relevanten Schulungsstandards
+Unser Schulungsraum und unsere Schulungseinrichtung entsprechen allen relevanten Schulungsstandards
+
