@@ -11,8 +11,8 @@
                 {% for course in courses_collection %}
                 {% if course.body == include.body %}
                 <div class="column is-full is-half-desktop">
-                    {% include components/course_card.html name=course.name code=course.code url=course.url
-                    icon_url=include.logo %}
+                    {% capture logo_url %}{{ '/assets/img/' | append: site.data.course_bodies[course.body].logo}}{% endcapture %}
+                    {% include components/course_card.html name=course.name code=course.code url=course.url icon_url=logo_url %}
                 </div>
                 {% endif %}
                 {% endfor %}

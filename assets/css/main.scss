@@ -16,8 +16,13 @@ $fa-font-path: '/assets/fonts';
 $navbar-breakpoint: $widescreen;
 $family-primary: 'paralucent';
 $fluorescent-yellow: #ccff00;
-$primary: darken($fluorescent-yellow, 5%);
-$primary-dark: darken($fluorescent-yellow, 15%);
+$the-blue-dark: #1e3d89;
+$the-blue-light: #038ac5;
+//$primary: darken($fluorescent-yellow, 5%);
+//$primary-dark: darken($fluorescent-yellow, 15%);
+$primary-light: $the-blue-light;
+$primary: $the-blue-dark;
+$primary-dark: $the-blue-dark;
 $link: $primary-dark;
 @import "bulma/bulma";
 
@@ -36,7 +41,7 @@ $link: $primary-dark;
 }
 
 #the-hero {
-  background: linear-gradient(-120deg, rgba($primary-dark, 0.6) 0%,  rgba($primary-dark, 0.7) 70%,  rgba($primary-dark, 0.8) 100%), url('/assets/img/photos/tc1.jpg') no-repeat center center scroll;
+  background: linear-gradient(10deg, rgba($primary-dark, 0.6) 0%,  rgba($primary-light, 0.8) 100%), url('/assets/img/photos/tc1.jpg') no-repeat center center scroll;
   background-size: cover;
   color: $white;
 }
@@ -52,4 +57,8 @@ $link: $primary-dark;
   .card-footer {
     margin-top: auto;
   }
+}
+
+.navbar-item img {
+  max-height: 40px;
 }

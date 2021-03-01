@@ -4,4 +4,4 @@ lang: en
 i18n_id: courses
 ---
 
-{% include courses.html %}
+{% include bodies.html %}

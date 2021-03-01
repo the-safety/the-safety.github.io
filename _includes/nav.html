@@ -4,20 +4,11 @@
 {% capture i18n_link_part %}{{ page.lang }}{% endcapture %}
 {% endif %}
 
-<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ '/' | prepend: i18n_link_part | relative_url }}">
-                <img src="{{ '/assets/img/the-turb-logo.png' | relative_url }}" alt="Logo">
-                <span id="the-navbar-logo-text">
-                    <span>T</span>
-                    <span class="has-text-primary">.</span>
-                    <span>H</span>
-                    <span class="has-text-primary">.</span>
-                    <span>E</span>
-                    <span class="has-text-primary">-</span>
-                    <span>Safety</span>
-                </span>
+                <img src="{{ '/assets/img/the-logo-www.png' | relative_url }}" alt="Logo">
             </a>
 
             <a role="button" class="navbar-burger">

@@ -16,13 +16,7 @@ layout: base
 <section class="section">
     <div class="container">
         <div class="content">
-            {% if page.body == "gwo" %}
-            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/gwo-logo-256x160.svg' | relative_url }}" alt="GWO Logo">
-            {% elsif page.body == "irata" %}
-            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/dost-ropeaccess-logo-256x160.svg' | relative_url }}" alt="IRATA Logo">
-            {% elsif page.body == "dguv" %}
-            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/dguv-logo-256x160.svg' | relative_url }}" alt="DGUV Logo">
-            {% endif %}
+            <img class="is-inline-block" style="height:3cm; width:auto;" src="{{ '/assets/img/' | append: site.data.course_bodies[page.body].logo | relative_url }}" alt="{{ site.data.course_bodies[page.body].abbr }} Logo">
             <h2>{{ page.name }}</h2>
             <div class="columns">
                 <div class="column">
