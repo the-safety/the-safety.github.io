@@ -12,10 +12,10 @@ Die Schulungen finden in unseren Räumlichkeiten in Witten, Deutschland statt
 
 <figure class="image"><img style="max-width: 800px;" src="/assets/img/photos/tc1.jpg"></figure>
 
-All our courses are competitively priced
+Alle unsere Kurse sind preislich konkurrenzfähig
 
-Upon completion of your GWO training course, your recording will be uploaded to WINDA
+Nach Abschluss Ihrer GWO-Schulung wird Ihre Aufzeichnung auf WINDA hochgeladen
 
-We can issue digitally signed certificates that can be verified online
+Wir können digital signierte Zertifikate ausstellen, die online verifiziert werden können
 
-If you currently hold a FISAT certificate and would like to convert to IRATA, we can assist you with our FISAT to IRATA conversion courses
+Wenn Sie derzeit ein FISAT-Zertifikat besitzen und zu IRATA konvertieren möchten, können wir Sie mit unseren FISAT-zu-IRATA-Konvertierungskursen unterstützen
