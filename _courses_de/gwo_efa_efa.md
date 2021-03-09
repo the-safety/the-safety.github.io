@@ -4,7 +4,7 @@ name: GWO EFA Enhanced First Aid
 code: GWO_EFA_EFA
 body: gwo
 price: 620
-duration: 1
+duration: 3
 months_valid: 24
 ---
 

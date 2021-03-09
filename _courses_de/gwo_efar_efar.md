@@ -4,7 +4,7 @@ name: GWO EFAR Enhanced First Aid Refresher
 code: GWO_EFAR_EFAR
 body: gwo
 price: 460
-duration: 1
+duration: 2
 months_valid: 24
 ---
 
