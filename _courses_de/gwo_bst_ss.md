@@ -2,7 +2,7 @@
 lang: de
 name: GWO BST Sea Survival
 code: GWO_BST_SS
-body: gwo
+body: gwo_disabled
 price: 590
 duration: 1
 months_valid: 24

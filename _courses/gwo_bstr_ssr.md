@@ -2,7 +2,7 @@
 lang: en
 name: GWO BSTR Sea Survival Refresher
 code: GWO_BSTR_SSR
-body: gwo
+body: gwo_disabled
 price: 590
 duration: 1
 months_valid: 24
