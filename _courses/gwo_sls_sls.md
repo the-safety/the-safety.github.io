@@ -1,6 +1,6 @@
 ---
 lang: en
-name: GWO SLS Slinger Signaller/Rigger Signal Person
+name: GWO SLS Slinger Signaller
 code: GWO_SLS_SLS
 body: gwo
 price: 630
